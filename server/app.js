@@ -24,8 +24,10 @@ const io = new Server(server, {
 })
 
 io.on("connection", (socket) => {
-    console.log("connected");
-    console.log("id", socket.id);
+    socket.on("message", (data) => {
+        console.log(data);
+        io.emit("receive-message", data)
+    })
 })
 
 
