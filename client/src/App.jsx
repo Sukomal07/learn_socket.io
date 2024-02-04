@@ -22,7 +22,7 @@ function App() {
 
   return (
     <Container>
-      <Typography variant="h1" color="red" gutterBottom>
+      <Typography variant="h1" color="red" gutterBottom textAlign={'center'} fontSize={'4rem'}>
         Welcome to Socket.io
       </Typography>
 
